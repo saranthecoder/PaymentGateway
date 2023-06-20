@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Payment Cancel</title>
+    <style>
+        *{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        div{
+            border: 1px solid ;
+            padding: 2em;
+            margin: 4em 10em;
+        }
+        h1{
+            font-size: 4em;
+            text-shadow: 1px 2px blue;
+        }
+        p{
+            font-size:large
+        }
+        a{
+            color: rgb(0, 157, 255);
+        }
+        a:hover{
+            color: rgb(0, 95, 154);
+
+        }
+        button{
+            font-size: 1.5rem;
+            background-color: rgb(42, 165, 136);
+            margin-left: 2rem;
+            border-radius: 7px;
+            box-shadow: 1px 2px ;
+        }
+        button:hover{
+            background-color: rgb(35, 130, 108);
+            transition: 0.5s;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Confirmed</h1>
+        <p>Thank you, your payment has been received.</p>
+        <button onclick="back()">Go home</button>
+    </div>
+    <script>
+        const back = ()=>{
+            window.location.href = "http://localhost:5500/client/"; // Replace with the desired URL
+        }
+    </script>
+</body>
+</html>

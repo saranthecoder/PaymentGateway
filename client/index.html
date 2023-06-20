@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Gateway</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .orders {
+        margin: 10px;
+      }
+      button {
+        font-size: 1.5em;
+        position: relative;
+        left: 45%;
+        border-radius: 3px;
+        background-color: rgb(155, 245, 255);
+        box-shadow: 2px 3px;
+        padding: 10px;
+      }
+      button:hover {
+        background-color: rgb(89, 142, 147);
+        transition: 0.5s;
+        cursor: pointer;
+      }
+      .img {
+        width: 90em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .fe .amount {
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+      }
+      img {
+        width: 100%;
+      }
+      .fe {
+        padding: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="orders">
+      <div class="img">
+        <div class="fe">
+          <img src="./frontend.jpg" alt="frontend" />
+          <p class="amount">Amount: $300</p>
+          <hr />
+          <p><b>Qty</b>: 3 (HTML,CSS,JS)</p>
+        </div>
+        <div class="fe">
+          <img src="./backend.jpg" alt="backend" />
+          <p class="amount">Amount: $700</p>
+          <hr />
+          <p><b>Qty</b>: 1 (NodeJS)</p>
+        </div>
+        <div class="fe">
+          <img src="./Database-Management-System.jpg" alt="database" />
+          <br /><br /><br /><br /><br /><br />
+          <p class="amount">Amount: $1000</p>
+          <hr />
+          <p><b>Qty</b>: 2(SQL,NO SQL)</p>
+        </div>
+      </div>
+
+      <button>Buy these Courses</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
